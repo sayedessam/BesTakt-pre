@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <title>BesTakt</title>
+    <style>
+        @font-face {
+            font-family: Antipas;
+            src: url(/static/font/NeoSansArabic.ttf);
+        }
+        
+        @font-face {
+            font-family: Nawar;
+            src: url(/static/font/AraESNawar-Regular.otf);
+        }
+        
+        .showcase {
+            background: url(static/img/kb.jpeg);
+        }
+    </style>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/logo.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href=" {{ url_for('static', filename='css/style.css') }} ">
+</head>
+
+<body lang={{ LANG }} dir={{ LANGUAGE[LANG][1] }}>
+    <div class="grid">
+
+        <!-- Top header (logo - language - register) -->
+        <section class="top-header">
+            <div class="top-brand">
+                <a href="/" class="brand" dir="ltr">
+                    <strong> <i class="far fa-handshake fa-1x"></i>&nbspBesTakt</strong> </a>
+            </div>
+            <div class="lang">
+                <a href="{{ url_for('lang') }}">{{ LANGUAGE[LANG][0] }}</a>
+            </div>
+            <div>
+                <!-- <form action="/register" method="post">
+                    <button class="m-btn" name="register" type="submit" style="font-family: Antipas;">
+                    {{ D_INDEX['free_btn'][LANG] }}
+                    </button>
+                </form> -->
+            </div>
+        </section>
+
+        <!-- Navigation Menu -->
+        <nav class="main-nav">
+
+        </nav>
+
+        <!-- Top Container -->
+        <section class="top-container">
+
+            <!-- Top Header on Image Title -->
+            <header class="showcase">
+                <h1>{{ D_INDEX['title'][LANG] }} &#9986; </h1>
+                <p><img src="../static/img/Saudi-Arabia-Flag32x32.png" alt="Saudi Flag">
+                    <img src="../static/img/United-Arab-Emirates32x32.png" alt="UAE Flag"> {{ D_INDEX['top_par'][LANG] }}
+                    <p>
+                        <img src="../static/img/VAT_200x200.png" alt="VAT ضريبة القيمة المضافة" style="width: 50px;">
+                    </p>
+                </p>
+                <a href="#" class="btn">{{ D_INDEX['soon'][LANG] }}</a>
+            </header>
+
+            <!-- 1 year special offer starts at 1999 sar/AED -->
+            <!-- <div class="top-box top-box-a">
+                <h3>{{ D_INDEX['card-a'][LANG][0] }}</h3>
+                <p>{{ D_INDEX['card-a'][LANG][1] }}</p>
+                <p class="price">{{ D_INDEX['card-a'][LANG][2] }}</p>
+                <a href="/register" class="btn">{{ D_INDEX['card-a'][LANG][3] }}</a>
+            </div>
+
+            <Schedule consultation >
+            <div class="top-box top-box-b">
+                <h3>{{ D_INDEX['card-b'][LANG][0] }}</h3>
+                <p class="price">{{ D_INDEX['card-b'][LANG][1] }}</p>
+                <a href="/consult" class="btn">{{ D_INDEX['card-b'][LANG][3] }}</a>
+            </div> -->
+        </section>
+        <!--  -->
+
+        <!-- Services Cards Title -->
+        <section id="services">
+            <hr><br>
+            <h1 style="margin: auto; font-size: 2em; padding: 30px;">
+                {{ D_INDEX['services'][LANG] }}</h1>
+        </section>
+
+        <!-- Services 6 Cards Section -->
+        <section class="boxes">
+
+            <div class="box">
+                <i class="fas fa-signal fa-4x"></i>
+                <h3>{{ D_INDEX['card-1-1'][LANG][0] }}</h3>
+                <p>{{ D_INDEX['card-1-1'][LANG][1] }}</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-calculator fa-4x"></i>
+                <h3>{{ D_INDEX['card-1-2'][LANG][0] }}</h3>
+                <p>{{ D_INDEX['card-1-2'][LANG][1] }}</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-cogs fa-4x"></i>
+                <h3>{{ D_INDEX['card-1-3'][LANG][0] }}</h3>
+                <p>{{ D_INDEX['card-1-3'][LANG][1] }}</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-users fa-4x"></i>
+                <h3>{{ D_INDEX['card-2-1'][LANG][0] }}</h3>
+                <p>{{ D_INDEX['card-2-1'][LANG][1] }}</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-bell fa-4x"></i>
+                <h3>{{ D_INDEX['card-2-2'][LANG][0] }}</h3>
+                <p>{{ D_INDEX['card-2-2'][LANG][1] }}</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-lightbulb fa-4x"></i>
+                <h3>{{ D_INDEX['card-2-3'][LANG][0] }}</h3>
+                <p>{{ D_INDEX['card-2-3'][LANG][1] }}</p>
+            </div>
+        </section>
+
+        <!-- Info Section -->
+        <section class="info">
+            <img src="../static/img/moving_kpi.gif" alt="Business Dashboard مؤشرات مالية">
+            <div>
+                <h2>{{ D_INDEX['card-l'][LANG][0] }}</h2>
+                <p>{{ D_INDEX['card-l'][LANG][1] }}
+                </p>
+
+                <a href="#" class="btn">{{ D_INDEX['soon'][LANG] }}</a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>BesTakt &copy; 2018</p>
+            <p>Dubai - email: client@bestakt.com</p>
+        </footer>
+
+    </div>
+    <!-- Main grid container -->
+
+</body>
+
+</html>
