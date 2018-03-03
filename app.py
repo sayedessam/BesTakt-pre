@@ -16,7 +16,9 @@ app = Flask(__name__)
 cache_buster.register_cache_buster(app)
 
 def tog_lang(lang):
-    return 'ar' if LANG == 'en' else 'en'
+    if lang == 'en':
+        return 'ar'
+    return 'en'
 
 @app.route('/')
 def home():    
