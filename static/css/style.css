@@ -46,15 +46,20 @@
     font-size: 130%;
     border-radius: 15px 50px;
     padding: 7px 20px;
-    text-decoration: red;
+    text-decoration: none;
     color: white;
     background: #7e21ad;
+}
+
+.brand > a {
+  text-decoration: none;
 }
 
 .lang {
     justify-self: flex-center;
     margin: 15px 0;
     font-size: 1.1em;
+    text-decoration: none;
 }
 
 .lang > a {
