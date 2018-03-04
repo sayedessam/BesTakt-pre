@@ -110,7 +110,7 @@ D_INDEX = {
     },
 
     'card-1-3':{
-        ara: [u'الإجراءات الإداية', u'نحن سنساعدك في وضع إجراءات وسياسات إداية لتنظيم سير العمل وتحسين الرقابة وتخفيض المصروفات بشركتك', u'' ],
+        ara: [u'الإجراءات الإدارية', u'نحن سنساعدك في وضع إجراءات وسياسات إداية لتنظيم سير العمل وتحسين الرقابة وتخفيض المصروفات بشركتك', u'' ],
         eng: ['Business Process', 'We help you develop your company process, policies and procedures for better control and cost reduction in your comapny', '']
     },
 
