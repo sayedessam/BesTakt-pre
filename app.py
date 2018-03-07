@@ -1,5 +1,5 @@
 from flask import (Flask, render_template, 
-    session, redirect, url_for, escape, request)
+    session, redirect, url_for, escape, request, send_from_directory)
 from flask_wtf import Form
 from CMS import *
 from flask_cache_buster import CacheBuster
@@ -14,6 +14,8 @@ cache_buster = CacheBuster(config=config)
 
 app = Flask(__name__)
 cache_buster.register_cache_buster(app)
+
+app.config['UPLOAD_FOLDER'] = '/nexmoj'
 
 def tog_lang(lang):
     if lang == 'en':
@@ -73,8 +75,14 @@ def logout():
     session.pop('username', None)
     return redirect(url_for('home'))
 
+@app.route('/nexmoj/<filename>')
+def welcome_call(filename):
+    print(app.config['UPLOAD_FOLDER'])
+    return send_from_directory('nexmoj', filename)
+
 # set the secret key. keep this really secret:
 app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'
+
 
 if __name__ == '__main__':
     app.run(debug=False)
