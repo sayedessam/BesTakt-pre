@@ -2,7 +2,8 @@
 
     {
         "action" : "talk",
-        "voiceName": "kimberly",
+        "voiceName": "Salli",
+        "level": 1,
         "text":"Welcome, This is BesTakt.com, your online financial consultant"
     }
 
