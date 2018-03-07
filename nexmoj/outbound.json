@@ -1,0 +1,18 @@
+[
+    {
+      "action": "record",
+      "eventUrl": ["https://www.bestakt.com/recordings"],
+      "endOnSilence": 3
+    },
+    {
+      "action": "connect",
+      "eventUrl": ["https://www.bestakt.com/events"],
+      "from":"12015946720",
+      "endpoint": [
+        {
+          "type": "phone",
+          "number": "966504591385"
+        }
+      ]
+    }
+  ]
