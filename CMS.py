@@ -34,8 +34,8 @@ D_FOOTER = { # site map - (title, items)
 
 D_INDEX = {
     'soon':{
-        ara:u'قريبآ',
-        eng:'Coming soon'
+        ara:u'عرض خاص - إتصل بنا الآن',
+        eng:'Limited offer - Contact Now'
     },
 
     'brand':{
